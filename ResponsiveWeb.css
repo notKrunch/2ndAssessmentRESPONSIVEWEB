@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    background-image: url(home.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    filter: opacity(10);
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    font-size: 20px;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+.logo img{
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    color: darkgoldenrod;
+    font-size: 70px;
+    text-align: center;
+
+}
+
+.button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media only screen and (max-width: 480px) {
+    ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    ul li a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    header {
+        height: 80vh;
+    }
+
+    .title {
+        top: 40%;
+    }
+
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .button {
+        top: 50%;
+    }
+
+    .btn {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    /* Adjustments for medium screens if needed */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Adjustments for large screens if needed */
+}
+
